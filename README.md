@@ -53,7 +53,7 @@ In order to receive the date or time set in the picker, you will need to impleme
 `OnDateSetListener` interfaces. Typically this will be the `Activity` or `Fragment` that creates the Pickers. The callbacks use the same API as the standard Android pickers.
 ```java
 @Override
-public void onTimeSet(RadialPickerLayout view, int hourOfDay, int minute) {
+public void onTimeSet(RadialPickerLayout view, int hourOfDay, int minute, int second) {
   String time = "You picked the following time: "+hourOfDay+"h"+minute;
   timeTextView.setText(time);
 }
